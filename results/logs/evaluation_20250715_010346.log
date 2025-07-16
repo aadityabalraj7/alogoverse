@@ -1,0 +1,19 @@
+2025-07-15 01:03:46,392 - INFO - ============================================================
+2025-07-15 01:03:46,392 - INFO - Duality AI Space Station Hackathon - Evaluation Script
+2025-07-15 01:03:46,392 - INFO - ============================================================
+2025-07-15 01:03:46,392 - INFO - Model: models/space_station_best.pt
+2025-07-15 01:03:46,392 - INFO - Config: config.yaml
+2025-07-15 01:03:46,392 - INFO - Output: results/evaluation
+2025-07-15 01:03:46,392 - INFO - Running comprehensive model evaluation...
+2025-07-15 01:03:46,392 - INFO - Loading model: models/space_station_best.pt
+2025-07-15 01:03:46,444 - INFO - Using device: cpu
+2025-07-15 01:03:46,444 - INFO - Running model validation...
+2025-07-15 01:04:09,255 - INFO - Detailed metrics saved to: results/evaluation/detailed_metrics.json
+2025-07-15 01:04:09,255 - INFO - mAP@0.5: 0.5490
+2025-07-15 01:04:09,255 - INFO - mAP@0.5:0.95: 0.4337
+2025-07-15 01:04:09,255 - INFO - Precision: 0.9865
+2025-07-15 01:04:09,256 - INFO - Recall: 0.1458
+2025-07-15 01:04:09,256 - INFO - Creating evaluation report...
+2025-07-15 01:04:09,256 - INFO - Evaluation report saved to: results/evaluation/evaluation_report.md
+2025-07-15 01:04:09,256 - INFO - Evaluation completed successfully!
+2025-07-15 01:04:09,256 - INFO - Results available in: results/evaluation

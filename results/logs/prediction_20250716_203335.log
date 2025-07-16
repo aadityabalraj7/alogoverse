@@ -1,0 +1,29 @@
+2025-07-16 20:33:35,898 - INFO - ============================================================
+2025-07-16 20:33:35,898 - INFO - Duality AI Space Station Hackathon - Prediction Script
+2025-07-16 20:33:35,898 - INFO - ============================================================
+2025-07-16 20:33:35,898 - INFO - Model: models/space_station_best.pt
+2025-07-16 20:33:35,898 - INFO - Source: dataset/test_images
+2025-07-16 20:33:35,898 - INFO - Output: results/test_predictions
+2025-07-16 20:33:35,898 - INFO - Confidence threshold: 0.5
+2025-07-16 20:33:35,898 - INFO - IoU threshold: 0.7
+2025-07-16 20:33:35,898 - INFO - Running batch prediction...
+2025-07-16 20:33:35,899 - INFO - Loading model: models/space_station_best.pt
+2025-07-16 20:33:35,980 - INFO - Using device: cpu
+2025-07-16 20:33:35,980 - INFO - Prediction parameters:
+2025-07-16 20:33:35,980 - INFO -   source: dataset/test_images
+2025-07-16 20:33:35,980 - INFO -   conf: 0.5
+2025-07-16 20:33:35,980 - INFO -   iou: 0.7
+2025-07-16 20:33:35,980 - INFO -   device: cpu
+2025-07-16 20:33:35,980 - INFO -   project: results/test_predictions
+2025-07-16 20:33:35,980 - INFO -   name: predictions
+2025-07-16 20:33:35,980 - INFO -   save: True
+2025-07-16 20:33:35,980 - INFO -   save_txt: True
+2025-07-16 20:33:35,980 - INFO -   save_conf: True
+2025-07-16 20:33:35,980 - INFO -   save_json: True
+2025-07-16 20:33:35,980 - INFO -   show_labels: True
+2025-07-16 20:33:35,980 - INFO -   show_conf: True
+2025-07-16 20:33:35,980 - INFO -   line_width: 2
+2025-07-16 20:33:35,980 - INFO -   exist_ok: True
+2025-07-16 20:33:35,980 - INFO - Starting predictions...
+2025-07-16 20:33:37,058 - INFO - Predictions completed. Results saved to: results/test_predictions
+2025-07-16 20:33:37,058 - INFO - Batch prediction completed successfully!

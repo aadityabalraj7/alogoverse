@@ -1,0 +1,78 @@
+# YOLOv8 Configuration for Duality AI Space Station Hackathon
+# Object Detection for Space Station Environment - Official HackByte_Dataset
+
+# Dataset paths
+path: ./HackByte_Dataset/data  # dataset root dir
+train: train/images  # train images (relative to 'path')
+val: val/images  # val images (relative to 'path')
+test: test/images  # test images (optional)
+
+# Classes (matching HackByte_Dataset)
+names:
+  0: FireExtinguisher
+  1: ToolBox
+  2: OxygenTank
+
+# Number of classes
+nc: 3
+
+# Model configuration
+model: yolov8n.pt  # Starting model (nano for faster training, can upgrade to yolov8s.pt, yolov8m.pt, yolov8l.pt, yolov8x.pt)
+
+# Training hyperparameters
+epochs: 100
+imgsz: 640
+batch: 16
+workers: 8
+device: auto  # auto-detect GPU/CPU
+patience: 50  # EarlyStopping patience
+save_period: 10  # Save checkpoint every x epochs
+
+# Optimization
+optimizer: auto  # auto, SGD, Adam, AdamW, NAdam, RAdam, RMSProp
+lr0: 0.01  # initial learning rate
+lrf: 0.01  # final OneCycleLR learning rate (lr0 * lrf)
+momentum: 0.937  # SGD momentum/Adam beta1
+weight_decay: 0.0005  # optimizer weight decay 5e-4
+warmup_epochs: 3.0  # warmup epochs (fractions ok)
+warmup_momentum: 0.8  # warmup initial momentum
+warmup_bias_lr: 0.1  # warmup initial bias lr
+
+# Augmentation parameters
+hsv_h: 0.015  # image HSV-Hue augmentation (fraction)
+hsv_s: 0.7    # image HSV-Saturation augmentation (fraction)
+hsv_v: 0.4    # image HSV-Value augmentation (fraction)
+degrees: 0.0  # image rotation (+/- deg)
+translate: 0.1  # image translation (+/- fraction)
+scale: 0.5    # image scale (+/- gain)
+shear: 0.0    # image shear (+/- deg)
+perspective: 0.0  # image perspective (+/- fraction), range 0-0.001
+flipud: 0.0   # image flip up-down (probability)
+fliplr: 0.5   # image flip left-right (probability)
+mosaic: 1.0   # image mosaic (probability)
+mixup: 0.0    # image mixup (probability)
+copy_paste: 0.0  # segment copy-paste (probability)
+
+# Validation/Testing
+conf: 0.25    # object confidence threshold for prediction
+iou: 0.7      # intersection over union (IoU) threshold for NMS
+max_det: 1000 # maximum number of detections per image
+half: False   # use FP16 half-precision inference
+dnn: False    # use OpenCV DNN for ONNX inference
+
+# Logging
+project: runs/detect  # project name
+name: space_station_detection  # experiment name
+exist_ok: False  # existing project/name ok, do not increment
+plots: True      # save plots during train/val
+save_json: True  # save results to JSON
+save_hybrid: False  # save hybrid version of labels (labels + additional data)
+save_conf: True  # save confidences in labels
+save_txt: True   # save results to *.txt
+save_crop: False # save cropped prediction boxes
+show_labels: True  # show class labels on plots
+show_conf: True    # show confidence values on plots
+visualize: False   # visualize model features
+augment: False     # apply image augmentation during prediction
+agnostic_nms: False  # class-agnostic NMS
+retina_masks: False  # use high-resolution segmentation masks 

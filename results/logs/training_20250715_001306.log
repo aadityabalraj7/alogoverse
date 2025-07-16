@@ -1,0 +1,33 @@
+2025-07-15 00:13:06,270 - INFO - ============================================================
+2025-07-15 00:13:06,270 - INFO - Duality AI Space Station Hackathon - Training Script
+2025-07-15 00:13:06,270 - INFO - ============================================================
+2025-07-15 00:13:06,270 - INFO - Configuration: config.yaml
+2025-07-15 00:13:06,270 - INFO - Model: yolov8n.pt
+2025-07-15 00:13:06,271 - INFO - Epochs: 10
+2025-07-15 00:13:06,271 - INFO - Resume: False
+2025-07-15 00:13:06,274 - INFO - Loaded configuration from: config.yaml
+2025-07-15 00:13:06,274 - INFO - Found directory: HackByte_Dataset/data/train/images
+2025-07-15 00:13:06,274 - INFO - Found directory: HackByte_Dataset/data/train/labels
+2025-07-15 00:13:06,274 - INFO - Found directory: HackByte_Dataset/data/val/images
+2025-07-15 00:13:06,274 - INFO - Found directory: HackByte_Dataset/data/val/labels
+2025-07-15 00:13:06,274 - INFO - Found test directory: HackByte_Dataset/data/test/images
+2025-07-15 00:13:06,274 - INFO - Initializing YOLOv8 model: yolov8n.pt
+2025-07-15 00:13:17,178 - INFO - Using device: cpu
+2025-07-15 00:13:17,179 - INFO - Training parameters:
+2025-07-15 00:13:17,179 - INFO -   data: config.yaml
+2025-07-15 00:13:17,179 - INFO -   epochs: 10
+2025-07-15 00:13:17,179 - INFO -   imgsz: 640
+2025-07-15 00:13:17,179 - INFO -   batch: 16
+2025-07-15 00:13:17,179 - INFO -   workers: 8
+2025-07-15 00:13:17,179 - INFO -   device: cpu
+2025-07-15 00:13:17,179 - INFO -   project: runs/detect
+2025-07-15 00:13:17,179 - INFO -   name: space_station_detection
+2025-07-15 00:13:17,179 - INFO -   save_period: 10
+2025-07-15 00:13:17,179 - INFO -   patience: 50
+2025-07-15 00:13:17,179 - INFO -   plots: True
+2025-07-15 00:13:17,179 - INFO -   save_json: True
+2025-07-15 00:13:17,179 - INFO -   save_txt: True
+2025-07-15 00:13:17,179 - INFO -   save_conf: True
+2025-07-15 00:13:17,179 - INFO -   exist_ok: False
+2025-07-15 00:13:17,179 - INFO -   resume: False
+2025-07-15 00:13:17,179 - INFO - Starting training...

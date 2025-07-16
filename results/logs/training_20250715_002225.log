@@ -1,0 +1,37 @@
+2025-07-15 00:22:25,596 - INFO - ============================================================
+2025-07-15 00:22:25,596 - INFO - Duality AI Space Station Hackathon - Training Script
+2025-07-15 00:22:25,596 - INFO - ============================================================
+2025-07-15 00:22:25,596 - INFO - Configuration: config.yaml
+2025-07-15 00:22:25,596 - INFO - Model: yolov8n.pt
+2025-07-15 00:22:25,596 - INFO - Epochs: 10
+2025-07-15 00:22:25,596 - INFO - Resume: False
+2025-07-15 00:22:25,600 - INFO - Loaded configuration from: config.yaml
+2025-07-15 00:22:25,600 - INFO - Found directory: HackByte_Dataset/data/train/images
+2025-07-15 00:22:25,600 - INFO - Found directory: HackByte_Dataset/data/train/labels
+2025-07-15 00:22:25,600 - INFO - Found directory: HackByte_Dataset/data/val/images
+2025-07-15 00:22:25,600 - INFO - Found directory: HackByte_Dataset/data/val/labels
+2025-07-15 00:22:25,600 - INFO - Found test directory: HackByte_Dataset/data/test/images
+2025-07-15 00:22:25,600 - INFO - Initializing YOLOv8 model: yolov8n.pt
+2025-07-15 00:22:25,683 - INFO - Using device: cpu
+2025-07-15 00:22:25,683 - INFO - Training parameters:
+2025-07-15 00:22:25,683 - INFO -   data: config.yaml
+2025-07-15 00:22:25,683 - INFO -   epochs: 10
+2025-07-15 00:22:25,683 - INFO -   imgsz: 640
+2025-07-15 00:22:25,683 - INFO -   batch: 16
+2025-07-15 00:22:25,683 - INFO -   workers: 8
+2025-07-15 00:22:25,683 - INFO -   device: cpu
+2025-07-15 00:22:25,683 - INFO -   project: runs/detect
+2025-07-15 00:22:25,683 - INFO -   name: space_station_detection
+2025-07-15 00:22:25,683 - INFO -   save_period: 10
+2025-07-15 00:22:25,683 - INFO -   patience: 50
+2025-07-15 00:22:25,683 - INFO -   plots: True
+2025-07-15 00:22:25,683 - INFO -   save_json: True
+2025-07-15 00:22:25,683 - INFO -   save_txt: True
+2025-07-15 00:22:25,683 - INFO -   save_conf: True
+2025-07-15 00:22:25,683 - INFO -   exist_ok: False
+2025-07-15 00:22:25,683 - INFO -   resume: False
+2025-07-15 00:22:25,683 - INFO - Starting training...
+2025-07-15 01:03:00,079 - INFO - Best model saved to: models/space_station_best.pt
+2025-07-15 01:03:00,089 - INFO - Last model saved to: models/space_station_last.pt
+2025-07-15 01:03:00,089 - INFO - Training completed successfully!
+2025-07-15 01:03:00,089 - INFO - Training pipeline completed successfully!
