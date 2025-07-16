@@ -179,3 +179,6 @@ Inference:   <50ms  (Real-time)
 
 *Built with ❤️ for the Duality AI Space Station Hackathon* # alogoverse
 # alogoverse
+
+## Demo Video
+[Watch the demo here](https://drive.google.com/file/d/1G-ukULymbEVaYavRVhuaSSvpTTVwntD2/view?usp=sharing)
